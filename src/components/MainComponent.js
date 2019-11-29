@@ -16,13 +16,16 @@ class Main extends Component {
 
   onDishSelect(dishId) {
     this.setState({ selectedDish: dishId});
-    console.log(dishId);
+  }
+
+  componentDidMount(){
+    console.log('Menu Component Mounted');
   }
 
   render() {
     return (
       <div>
-        <Navbar dark color="primary">
+        <Navbar dark color="dark">
           <div className="container">
             <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
           </div>
